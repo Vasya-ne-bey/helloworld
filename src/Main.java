@@ -4,6 +4,8 @@ public class Main {
     public static void main(String[] args) {
         homework1();
         homework2();
+        homework3();
+        homework4();
     }
 
     public static void homework1() {
