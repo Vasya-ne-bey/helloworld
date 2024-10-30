@@ -145,13 +145,18 @@ public class Main {
         int age = 18;
         System.out.println( " Человеку 18 или больше лет.");
         if (age >= 18) { System.out.println(" Если возраст человека равен или больше 18, то он совершеннолетний");
+        } else {
+            System.out.println(" Если возраст человека меньше 18, то он еще не достиг совершеннолетия, надо немного подождать ");
         }
+
         int temperature = 9;
         if (temperature > 5) { System.out.println("на улице " + temperature + " градусов, сегодня тепло, можно идти без шапки"); }
-        temperature = 2;
-        if (temperature < 5) {  System.out.println(" на улице " + temperature + " градусов, нужно надеть шапку"); }
+        else {  System.out.println(" на улице " + temperature + " градусов, нужно надеть шапку"); }
+
         int speed = 63;
         if (speed > 60) {  System.out.println(" Если скорость выше 60 км/ч, то придется заплатить штраф "); }
+        else { System.out.println("Если скорость ниже 60 км/ч, то можно ездить спокойно"); }
+
         int years = 3;
         if (years > 2 && years <= 6) {  System.out.println(" Если возраст человека равен " + years + " то ему нужно ходить в садик"); }
         years = 10;
@@ -160,19 +165,24 @@ public class Main {
         if (years >= 18 && years <= 24) {  System.out.println(" Если возраст человека равен " + years + " то ему нужно ходить в университет"); }
         years = 30;
         if (years > 24) {  System.out.println(" Если возраст человека равен " + years + " то ему пора ходить на работу"); }
+
         int let = 4;
         if (let < 5) {  System.out.println(" Если возраст ребенка равен " + let + " то ему нельзя кататься на аттракционе "); }
         let = 9;
         if (let > 5 && let < 14) {  System.out.println(" Если возраст ребенка равен " + let + " то ему можно кататься на аттракционе в сопровождении взрослого "); }
         let = 16;
         if (let > 14) {  System.out.println(" Если возраст ребенка равен " + let + " то ему можно кататься на аттракционе без сопровождения взрослого "); }
+
         int passenger = 86;
         if (passenger < 102 ) {  System.out.println(" В вагоне есть места "); }
         else {  System.out.println(" В вагоне нет мест"); }
+
         int one = 1;
         int two = 2;
         int three = 3;
-        if (three > two && three > one) {  System.out.println(" 3 наибольшее число "); }
-        else {  System.out.println(" 3 не наибольшее число "); }
+        if (three > two && three > one) {  System.out.println(three + " наибольшее число "); }
+        else if (two > three && two > one) {  System.out.println(two + " наибольшее число "); }
+        else { System.out.println(one + "наибольшее число"); }
+
     }
 }
