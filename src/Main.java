@@ -295,5 +295,46 @@ public class Main {
             default:
                 System.out.println("Такого месяца нет");
         }
+
+            System.out.println(" Задание по циклам 1 ");
+            for (int i = 1; i <= 10; i = i + 1) {
+                System.out.println(i);
+
+            }
+            for (int i = 10; i >= 1; i = i - 1) {
+                System.out.println(i);
+            }
+            for (int i = 2; i <= 17; i = i + 2) {
+                System.out.println(i);
+            }
+            for (int i = 10; i >= -10; i = i - 1) {
+                System.out.println(i);
+            }
+            for (int i = 1904; i <= 2096; i = i + 4) {
+                System.out.println(i);
+            }
+            for (int i = 7; i <= 98; i = i + 7) {
+                System.out.println(i);
+            }
+            for (int i = 1; i <= 512; i = i * 2) {
+                System.out.println(i);
+            }
+            int cash = 29000;
+            int month = 0;
+            for (int i = 0; i < 12; i = i + 1) {
+                month = month + cash;
+                System.out.println(" Месяц " + i + " Сумма накоплений равна " + cash + " Рублей");
+            }
+            int money = 29000;
+            int summ = 0;
+            for (int i = 0; i < 12; i = i + 1) {
+                summ = summ + summ / 100;
+                summ = summ + money;
+                System.out.println(" Месяц " + i + " сумма накоплений равна " + summ + " рублей");
+            }
+            int two = 2;
+            for (int i = 1; i <= 10; i = i + 1) {
+                System.out.println(i + "*" + two + "=" + two * i);
+            }
+        }
     }
-}
