@@ -7,6 +7,7 @@ public class Main {
         homework3();
         homework4();
         homework5();
+
     }
 
     public static void homework1() {
