@@ -297,106 +297,105 @@ public class Main {
                 System.out.println("Такого месяца нет");
         }
 
-            System.out.println(" Задание по циклам 1 ");
-            for (int i = 1; i <= 10; i = i + 1) {
-                System.out.println(i);
+        System.out.println(" Задание по циклам 1 ");
+        for (int i = 1; i <= 10; i = i + 1) {
+            System.out.println(i);
 
-            }
-            for (int i = 10; i >= 1; i = i - 1) {
-                System.out.println(i);
-            }
-            for (int i = 2; i <= 17; i = i + 2) {
-                System.out.println(i);
-            }
-            for (int i = 10; i >= -10; i = i - 1) {
-                System.out.println(i);
-            }
-            for (int i = 1904; i <= 2096; i = i + 4) {
-                System.out.println(i);
-            }
-            for (int i = 7; i <= 98; i = i + 7) {
-                System.out.println(i);
-            }
-            for (int i = 1; i <= 512; i = i * 2) {
-                System.out.println(i);
-            }
-            int cash = 29000;
-            int month = 0;
-            for (int i = 0; i < 12; i = i + 1) {
-                month = month + cash;
-                System.out.println(" Месяц " + i + " Сумма накоплений равна " + cash + " Рублей");
-            }
-            int money = 29000;
-            int summ = 0;
-            for (int i = 0; i < 12; i = i + 1) {
-                summ = summ + summ / 100;
-                summ = summ + money;
-                System.out.println(" Месяц " + i + " сумма накоплений равна " + summ + " рублей");
-            }
-            int two = 2;
-            for (int i = 1; i <= 10; i = i + 1) {
-                System.out.println(i + "*" + two + "=" + two * i);
-            }
+        }
+        for (int i = 10; i >= 1; i = i - 1) {
+            System.out.println(i);
+        }
+        for (int i = 2; i <= 17; i = i + 2) {
+            System.out.println(i);
+        }
+        for (int i = 10; i >= -10; i = i - 1) {
+            System.out.println(i);
+        }
+        for (int i = 1904; i <= 2096; i = i + 4) {
+            System.out.println(i);
+        }
+        for (int i = 7; i <= 98; i = i + 7) {
+            System.out.println(i);
+        }
+        for (int i = 1; i <= 512; i = i * 2) {
+            System.out.println(i);
+        }
+        int cash = 29000;
+        int month = 0;
+        for (int i = 0; i < 12; i = i + 1) {
+            month = month + cash;
+            System.out.println(" Месяц " + i + " Сумма накоплений равна " + cash + " Рублей");
+        }
+        int money = 29000;
+        int summ = 0;
+        for (int i = 0; i < 12; i = i + 1) {
+            summ = summ + summ / 100;
+            summ = summ + money;
+            System.out.println(" Месяц " + i + " сумма накоплений равна " + summ + " рублей");
+        }
+        int two = 2;
+        for (int i = 1; i <= 10; i = i + 1) {
+            System.out.println(i + "*" + two + "=" + two * i);
+        }
         System.out.println(" Циклы, вторая часть:");
-            int salary = 15000;
-            int total = 0;
-            int numberOfMonth = 0;
-            while (total <= 2459000) {
-                total = total + salary;
-                numberOfMonth = numberOfMonth + 1;
-                System.out.println(" Месяц " + numberOfMonth + " сумма накоплений равна " + total);
-            }
-            int eggs = 0;
-            while(eggs < 10) {
-                eggs = eggs + 1;
+        int salary = 15000;
+        int total = 0;
+        int numberOfMonth = 0;
+        while (total <= 2459000) {
+            total = total + salary;
+            numberOfMonth = numberOfMonth + 1;
+            System.out.println(" Месяц " + numberOfMonth + " сумма накоплений равна " + total);
+        }
+        int eggs = 0;
+        while (eggs < 10) {
+            eggs = eggs + 1;
             System.out.print(" " + eggs);
         }
-         System.out.println();
-            for(eggs = 10; eggs >= 1; eggs = eggs - 1) {
-                System.out.print(" " + eggs);
-            }
+        System.out.println();
+        for (eggs = 10; eggs >= 1; eggs--) {
+            System.out.print(" " + eggs);
+        }
         System.out.println();
 
-            int lifers = 12000000;
-            int god = 0;
-            while (god < 10) {
-                lifers = (lifers / 1000) * (1000 - 8 + 17);
-                god = god + 1;
-                System.out.println("Год " + god + ", численность населения составляет " + lifers);
+        int peoples = 12000000;
+        int thousand = 1000;
+        int deadmans = 8;
+        int childrens = 17;
+        year = 0;
+        while (year < 10) {
+            peoples = (peoples / thousand) * (thousand - deadmans + childrens);
+            year = year + 1;
+            System.out.println("Год " + year + ", численность населения составляет " + peoples);
+        }
+        int contribution = 15000;
+        int percent = 0;
+        while (contribution < 12000000) {
+            contribution = contribution + contribution / 100 * 7;
+            percent = percent + 1;
+            if (percent % 6 == 0) {
+                System.out.println(" Месяц " + percent + ", вклад равен " + contribution);
             }
-            int vasyaVlozhil = 15000;
-            int zlato = 0;
-            while (vasyaVlozhil < 12000000) {
-                vasyaVlozhil = vasyaVlozhil + vasyaVlozhil / 100 * 7;
-                zlato = zlato + 1;
-                if (zlato % 6 == 0)
-                {
-                    System.out.println(" Месяц " + zlato + ", вклад равен " + vasyaVlozhil);
-                }
-            }
-            int vklad = 15000;
-            int period = 0;
-            while (period < (9 * 12)) {
-                vklad = vklad + vklad / 100 * 7;
-                period = period + 1;
-                if (period % 6 == 0)
-                    System.out.println(" Месяц " + period + " сумма вклада равна " + vklad);
-            }
-            int firstFriday = 4;
-            int fullMonth = 0;
-            while (fullMonth < 31) {
-                fullMonth = fullMonth + 1;
-                firstFriday = firstFriday + 7;
-                if ((fullMonth - 4) % 7 == 0)
-                    System.out.println(" Сегодня пятница, " + fullMonth + "-е число. Необходимо подготовить отчет.");
-            }
-            int cycle = 0;
-            while (cycle < 2024) {
-                cycle = cycle + 79;
-                if (cycle > 1824)
-                    System.out.println(cycle);
-            }
-
+        }
+        contribution = 15000;
+        int period = 0;
+        while (period < (9 * 12)) {
+            contribution = contribution + contribution / 100 * 7;
+            period = period + 1;
+            if (period % 6 == 0)
+                System.out.println(" Месяц " + period + " сумма вклада равна " + contribution);
         }
 
+        int currentYear = 2024;
+        int twoHundredBackward = currentYear - 200;
+        int oneHundredForward = currentYear + 100;
+        for (int t = 0; t <= oneHundredForward; t += 79) {
+            if (t > twoHundredBackward) {
+                System.out.println(t + " год, когда над Землей пролетает комета.");
+            }
+        }
     }
+    }
+
+
+
+
